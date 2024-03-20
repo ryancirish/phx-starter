@@ -18,6 +18,8 @@ defmodule RyancirishWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/about", PageController, :about
+    get "/blog", PageController, :blog
   end
 
   # Other scopes may use custom stacks.
