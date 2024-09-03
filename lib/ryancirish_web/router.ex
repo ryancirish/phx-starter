@@ -19,7 +19,12 @@ defmodule RyancirishWeb.Router do
 
     get "/", PageController, :home
     get "/about", PageController, :about
-    get "/blog", PageController, :blog
+    get "/blog", PageController, :index
+    pages "/blog/:page", PageController, :show,
+      id: :blog,
+      from: "priv/pages/**/*.md",
+      attrs: [:title, :author, :date],
+      sort: {:date, :desc}
   end
 
   # Other scopes may use custom stacks.

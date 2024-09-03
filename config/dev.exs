@@ -57,7 +57,8 @@ config :ryancirish, RyancirishWeb.Endpoint,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/ryancirish_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/ryancirish_web/(controllers|live|components)/.*(ex|heex)$",
+      ~r"priv/pages/.*(md)$"
     ]
   ]
 

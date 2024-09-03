@@ -1,0 +1,10 @@
+<div style="background:url('/images/sky.jpg')">
+  <h1 class="f-headline lh-solid helvetica mt0 tracked pointer"><a href="/" class="white no-underline hover-dark-red hover-bg-dark-red">blog</a></h1>
+  
+  <main class="w-two-thirds center white pb4 min-vh-100">
+    <h2 :if={@date}><%= @date %></h2>
+    <h1><%= @title %></h1>
+    <h2 :if={@author}><%= @author %></h2>
+    <div class="mw-100"><%= @inner_content %></div>
+  </main>
+</div>

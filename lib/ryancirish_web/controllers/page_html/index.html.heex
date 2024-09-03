@@ -1,0 +1,12 @@
+<div class="vh-100" style="background:url('/images/sky.jpg') repeat-y">
+  <h1 class="f-headline lh-solid helvetica mt0 tracked pointer"><a href="/" class="white no-underline hover-dark-red hover-bg-dark-red">blog</a></h1>
+  
+  <main class="center w-50-ns w-80 center">
+    <%= for page <- @pages do %>
+      <.link navigate={page.path}>
+        <label class="white no-underline"><%= page.assigns.date %></label>
+        <h1 class="lightest-blue hover-pink"><%= page.assigns.title %></h1>
+      </.link>
+    <% end %>
+  </main>
+</div>

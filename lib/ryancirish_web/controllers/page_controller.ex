@@ -11,7 +11,15 @@ defmodule RyancirishWeb.PageController do
     render(conn, :about, layout: false)
   end
 
-  def blog(conn, _params) do
-    render(conn, :blog, layout: false)
+  def show(conn, _params) do
+    render(conn, "show.html", layout: false)
+  end
+
+  def index(conn, _params) do
+    pages = RyancirishWeb.Router.get_pages!(:blog)
+
+    conn
+    |> assign(:pages, pages)
+    |> render("index.html", layout: false)
   end
 end
