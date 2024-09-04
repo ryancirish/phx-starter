@@ -181,8 +181,3 @@ git push gigalixir main
 And you're done!
 
 A small caveat though, there is no database_url configured so you're going to get 502'd. Should probably run ecto commands to create this when testing out your Domain/Resources.
-
-
-You can save this content as a .md file, for example `roll-your-own-ssg-with-ash-and-phoenix.md`. The metadata at the top of the file (between the `---` lines) is called YAML front matter and is commonly used in static site generators to provide metadata about the content.
-
-```
