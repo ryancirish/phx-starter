@@ -1,5 +1,11 @@
-<div style="background:url('/images/sky.jpg')">
-  <h1 class="f-headline lh-solid helvetica mt0 tracked pointer"><a href="/" class="white no-underline hover-dark-red hover-bg-dark-red">blog</a></h1>
+<style type="text/css">
+  .links a {
+    color: #ff5afa;
+  }
+</style>
+
+<div style="background:url('/images/sky.jpg')" class="links">
+  <h1 class="f-headline lh-solid helvetica mt0 tracked pointer"><a href="/blog" class="white no-underline hover-dark-red hover-bg-dark-red">blog</a></h1>
   
   <main class="w-two-thirds center white pb4 min-vh-100">
     <h2 :if={@date}><%= @date %></h2>

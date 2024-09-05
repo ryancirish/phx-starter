@@ -68,7 +68,7 @@ In the process of discovering this I ended up expanding the loop to explicit dec
 <%= for page <- @pages do %>
   <.link navigate={page.path}>
     <label class="white no-underline"><%= page.assigns.date %></label>
-    <h1 class="lightest-blue hover-pink"><%= page.assigns.title %></h1>
+    <label class="lightest-blue hover-pink"><%= page.assigns.title %></label>
   </.link>
 <% end %>
 ```
